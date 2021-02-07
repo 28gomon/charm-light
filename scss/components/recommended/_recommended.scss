@@ -1,0 +1,208 @@
+.recommended {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .title-section {
+        margin-bottom: 40px;
+    }
+}
+
+.product {
+
+    &__items {
+        .item {
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: 0 1px 18px rgba($black, .15);
+            transition: box-shadow .25s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 1px 18px rgba($black, .30);
+
+                .button-function {
+                    opacity: 1;
+                }
+
+                .image {
+                    a {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba($white, .23);
+                        }
+                    }
+                }
+            }
+
+            .button-function {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+
+                & > button {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+
+                    &:hover {
+                        span {
+                            display: block;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        left: -80px;
+                        bottom: -100%;
+                        font-size: 14px;
+                        min-width: 120px;
+                        background: lighten($color: $graphite_light, $amount: 70);
+                        z-index: 2;
+                        text-align: center;
+                        border-radius: 3px;
+                        padding: 3px 0;
+                        display: none;
+                        transition: all .25s ease-in-out;
+                    }
+                }
+            }
+    
+            .image {
+                position: relative;
+
+                a {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        transition: background .25s ease-in-out;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                &:hover {
+                    a {
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba($white, .23);
+                        }
+                    }
+                }
+            }
+
+            .content {
+                
+                border-left: 1px solid $gray-light;
+                border-right: 1px solid $gray-light;
+                border-bottom: 1px solid $gray-light;  
+                
+
+                .title {
+                    margin-bottom: 20px;
+                    text-align: center;
+                    padding: {
+                        top: 20px;
+                        left: 20px;
+                        right: 20px;
+                    }
+
+                    h3 {
+                        a {
+                            display: block;
+                            font-family: $font_raleway_bold;
+
+                            &:hover {
+                                color: $accent_color;
+                            }
+                        }
+                    }
+                }
+
+                .price {
+                    text-align: center;
+
+                    p {
+                        font-size: 30px;
+                        font-family: $font_oswald_bold;
+
+                        span {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+                .button-group {
+                    width: 100%;
+                    
+                    & > button {
+                        width: 100%;
+                        height: 50px;
+                        border: none;
+                        font-size: 18px;
+                        transition: background-color .25s ease-in-out;
+                    }
+
+                    .btn-buy-fast {
+                        background-color: $accent_color;
+
+                        span {
+                            color: $white;
+                            font-family: $font_raleway_bold;
+                        }
+
+                        &:hover {
+                            background-color: lighten($color: $accent_color, $amount: 10);
+                        }
+                    }
+
+                    .btn-add-to-cart {
+                        color: $font_color;
+                        background-color: $gray-light;
+
+                        .fa {
+                            margin-right: 5px;
+                        }
+
+                        span {
+                            font-family: $font_raleway_bold;
+                        }
+
+                        &:hover {
+                            background-color: darken($color: $gray-light, $amount: 10)
+                        }
+                    }
+                }
+            }
+            // content
+        }
+    }
+}

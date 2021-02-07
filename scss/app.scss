@@ -1,0 +1,47 @@
+@import 'fonts';
+@import 'variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+    position: relative;
+    background-color: $white;
+}
+
+.body-hidden {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.border-bottom-1 {
+    border-bottom: 1px solid $graphite_light;
+}
+
+h3 {
+    margin: 0;
+}

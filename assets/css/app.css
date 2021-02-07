@@ -1,0 +1,631 @@
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url("./../fonts/Oswald/Oswald-Bold.eot");
+  src: local("./../fonts/Oswald/Oswald Bold"), local("Oswald-Bold"), url("./../fonts/Oswald/Oswald-Bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/Oswald/Oswald-Bold.woff") format("woff"), url("./../fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url("./../fonts/Oswald/Oswald-Regular.eot");
+  src: local("./../fonts/Oswald/Oswald Regular"), local("Oswald-Regular"), url("./../fonts/Oswald/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/Oswald/Oswald-Regular.woff") format("woff"), url("./../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Light';
+  src: url("./../fonts/Oswald/Oswald-Light.eot");
+  src: local("./../fonts/Oswald/Oswald Light"), local("Oswald-Light"), url("./../fonts/Oswald/Oswald-Light.eot?#iefix") format("embedded-opentype"), url("./../fonts/Oswald/Oswald-Light.woff") format("woff"), url("./../fonts/Oswald/Oswald-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("./../fonts/Raleway/Raleway-Regular.eot");
+  src: local("./../fonts/Raleway/Raleway Regular"), local("Raleway-Regular"), url("./../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("./../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("./../fonts/Raleway/Raleway-Bold.eot");
+  src: local("./../fonts/Raleway/Raleway Bold"), local("Raleway-Bold"), url("./../fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("./../fonts/Raleway/Raleway-Bold.woff") format("woff"), url("./../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Raleway Regular', FontAwesome, Roboto, system-ui, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+/* line 10, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 15, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+/* line 21, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #232323;
+}
+
+/* line 33, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 37, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+/* line 43, ../../../../../Users/gomon/Work/charm-of/HTML/scss/libs/_normalize.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header {
+  width: 100%;
+  background: #303030;
+}
+
+/* line 5, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 10, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 15, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper span {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* line 19, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper span a {
+  font-family: "Raleway Bold";
+  color: #b3b3b3;
+  text-decoration: underline;
+  padding: 5px 0;
+}
+
+/* line 25, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper span a:hover {
+  text-decoration: none;
+}
+
+/* line 32, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper .top-phone a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Oswald Regular";
+}
+
+/* line 38, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .top-section__wrapper .top-phone a .fa {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* line 47, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 57, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* line 62, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .logo {
+  width: 200px;
+  margin-right: 5%;
+}
+
+/* line 66, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .logo a {
+  display: block;
+  width: 100%;
+}
+
+/* line 70, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .logo a img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 78, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 84, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search input {
+  width: 100%;
+  background: #4d4d4d;
+  border: 1px solid #666666;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: background .25s ease-in-out;
+}
+
+/* line 93, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search input::placeholder {
+  font-size: 18px;
+  color: #b3b3b3;
+}
+
+/* line 98, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search input:hover, header .components-section .search input:active, header .components-section .search input:focus {
+  background: #454545;
+}
+
+/* line 103, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search button {
+  width: 50px;
+  border-radius: 0;
+  border: 1px solid #666666;
+  background: #4d4d4d;
+}
+
+/* line 109, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search button .fa {
+  color: #b3b3b3;
+  font-size: 20px;
+  transition: color .25s ease-in-out;
+}
+
+/* line 116, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .search button:hover .fa {
+  color: white;
+}
+
+/* line 124, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group {
+  width: 50%;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 131, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .account {
+  position: relative;
+  margin-right: 20px;
+}
+
+/* line 135, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .account a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* line 139, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .account a:hover, header .components-section .links-group .account a:active, header .components-section .links-group .account a:focus {
+  text-decoration: none;
+}
+
+/* line 144, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .wishlist, header .components-section .links-group .compare {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 148, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .wishlist a, header .components-section .links-group .compare a {
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .25s ease-in-out;
+}
+
+/* line 159, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/header/_header.scss */
+header .components-section .links-group .wishlist a:hover, header .components-section .links-group .wishlist a:active, header .components-section .links-group .wishlist a:focus, header .components-section .links-group .compare a:hover, header .components-section .links-group .compare a:active, header .components-section .links-group .compare a:focus {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/slider-home/_slider-home.scss */
+.slider-home {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* line 6, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/slider-home/_slider-home.scss */
+.slider-home__wrapper img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.recommended {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 6, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.recommended .title-section {
+  margin-bottom: 40px;
+}
+
+/* line 14, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 1px 18px rgba(35, 35, 35, 0.15);
+  transition: box-shadow .25s ease-in-out;
+}
+
+/* line 22, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item:hover {
+  box-shadow: 0 1px 18px rgba(35, 35, 35, 0.3);
+}
+
+/* line 25, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item:hover .button-function {
+  opacity: 1;
+}
+
+/* line 31, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item:hover .image a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.23);
+}
+
+/* line 44, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .button-function {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+/* line 52, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .button-function > button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+/* line 59, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .button-function > button:hover span {
+  display: block;
+}
+
+/* line 64, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .button-function > button span {
+  position: absolute;
+  left: -80px;
+  bottom: -100%;
+  font-size: 14px;
+  min-width: 120px;
+  background: white;
+  z-index: 2;
+  text-align: center;
+  border-radius: 3px;
+  padding: 3px 0;
+  display: none;
+  transition: all .25s ease-in-out;
+}
+
+/* line 81, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .image {
+  position: relative;
+}
+
+/* line 84, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .image a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* line 90, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .image a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: background .25s ease-in-out;
+}
+
+/* line 102, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .image img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 109, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .image:hover a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.23);
+}
+
+/* line 122, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* line 129, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .title {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 139, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .title h3 a {
+  display: block;
+  font-family: "Raleway Bold";
+}
+
+/* line 143, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .title h3 a:hover {
+  color: #885868;
+}
+
+/* line 150, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .price {
+  text-align: center;
+}
+
+/* line 153, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .price p {
+  font-size: 30px;
+  font-family: "Oswald Bold";
+}
+
+/* line 157, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .price p span {
+  margin-left: 8px;
+}
+
+/* line 163, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group {
+  width: 100%;
+}
+
+/* line 166, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group > button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  transition: background-color .25s ease-in-out;
+}
+
+/* line 174, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-buy-fast {
+  background-color: #885868;
+}
+
+/* line 177, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-buy-fast span {
+  color: #ffffff;
+  font-family: "Raleway Bold";
+}
+
+/* line 182, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-buy-fast:hover {
+  background-color: #a37081;
+}
+
+/* line 187, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-add-to-cart {
+  color: #232323;
+  background-color: #e0e0e0;
+}
+
+/* line 191, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-add-to-cart .fa {
+  margin-right: 5px;
+}
+
+/* line 195, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-add-to-cart span {
+  font-family: "Raleway Bold";
+}
+
+/* line 199, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/recommended/_recommended.scss */
+.product__items .item .content .button-group .btn-add-to-cart:hover {
+  background-color: #c7c7c7;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/brands/_brands.scss */
+.brands {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 6, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/brands/_brands.scss */
+.brands .title-section {
+  margin-bottom: 40px;
+}
+
+/* line 11, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/brands/_brands.scss */
+.brands__items .items-wrapper {
+  width: 100%;
+}
+
+/* line 14, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/brands/_brands.scss */
+.brands__items .items-wrapper .item {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 1px 12px rgba(35, 35, 35, 0.12);
+}
+
+/* line 20, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/brands/_brands.scss */
+.brands__items .items-wrapper .item img {
+  width: 100%;
+}
+
+/* line 1, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #303030;
+}
+
+/* line 6, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer .title {
+  color: #ffffff;
+}
+
+/* line 10, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer ul {
+  margin-bottom: 30px;
+}
+
+/* line 13, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer ul li a {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  padding: 3px 0;
+}
+
+/* line 19, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer ul li a:hover {
+  color: #b3b3b3;
+}
+
+/* line 26, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer .top-section {
+  margin-bottom: 20px;
+}
+
+/* line 30, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer .copy {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* line 34, ../../../../../Users/gomon/Work/charm-of/HTML/scss/components/footer/_footer.scss */
+footer .copy .fa {
+  margin-right: 10px;
+}
+
+/* line 7, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+body {
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* line 12, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+.body-hidden {
+  overflow: hidden;
+}
+
+/* line 24, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+/* line 29, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+.hidden {
+  display: none;
+}
+
+/* line 33, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+a {
+  transition: all .25s ease-in-out;
+}
+
+/* line 36, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 41, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+.border-bottom-1 {
+  border-bottom: 1px solid #4d4d4d;
+}
+
+/* line 45, ../../../../../Users/gomon/Work/charm-of/HTML/scss/app.scss */
+h3 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,38 @@
+footer {
+    width: 100%;
+    padding: 50px 0;
+    background: $graphite;
+
+    .title {
+        color: $white;
+    }
+
+    ul {
+        margin-bottom: 30px;
+        li {
+            a {
+                color: $white;
+                display: block;
+                font-size: 18px;
+                padding: 3px 0;
+
+                &:hover {
+                    color: darken($color: $white, $amount: 30)
+                }
+            }
+        }
+    }
+
+    .top-section {
+        margin-bottom: 20px;
+    }
+
+    .copy {
+        color: $white;
+        font-size: 20px;
+
+        .fa {
+            margin-right: 10px;
+        }
+    }
+}

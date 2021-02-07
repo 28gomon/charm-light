@@ -1,0 +1,167 @@
+header {
+    width: 100%;
+    background: $graphite;
+
+    .top-section {
+        height: 45px;
+        display: flex;
+        align-items: center;
+    
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            span {
+                color: $white;
+                font-size: 18px;
+        
+                a {
+                    font-family: $font_raleway_bold;
+                    color: darken($color: $white, $amount: 30);
+                    text-decoration: underline;
+                    padding: 5px 0;
+        
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .top-phone {
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $white;
+                    font-family: $font_oswald_reg;
+
+                    .fa {
+                        font-size: 25px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .components-section {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            margin-right: 5%;
+
+            a {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        // logo
+
+        .search {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 100%;
+                background: $graphite_light;
+                border: 1px solid darken($color: $white, $amount: 60);
+                padding-left: 15px;
+                color: $white;
+                font-size: 18px;
+                transition: background .25s ease-in-out;
+                
+                &::placeholder {
+                    font-size: 18px;
+                    color: darken($color: $white, $amount: 30)
+                }
+
+                &:hover, &:active, &:focus {
+                    background: darken($color: $graphite_light, $amount: 3);
+                }
+            }
+
+            button {
+                width: 50px;
+                border-radius: 0;
+                border: 1px solid darken($color: $white, $amount: 60);
+                background: $graphite_light;
+
+                .fa {
+                    color: darken($color: $white, $amount: 30);
+                    font-size: 20px;
+                    transition: color .25s ease-in-out;
+                }
+
+                &:hover {
+                    .fa {
+                        color: darken($color: $white, $amount: 0);
+                    }
+                }
+            }
+        }
+        // search
+
+        .links-group {
+            width: 50%;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .account {
+                position: relative;
+                margin-right: 20px;
+
+                a {
+                    color: $white;
+                    font-size: 18px;
+                    // font-family: $font_oswald_reg;
+                    &:hover, &:active, &:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .wishlist, .compare {
+                width: 40px;
+                height: 40px;
+
+                a {
+                    font-size: 20px;
+                    color: $white;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: color .25s ease-in-out;
+
+                    &:hover, &:active, &:focus {
+                        color: darken($color: $white, $amount: 30);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

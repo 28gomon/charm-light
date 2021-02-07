@@ -1,0 +1,56 @@
+// Oswald
+@font-face {
+    font-family: 'Oswald Bold';
+    src: url('./../fonts/Oswald/Oswald-Bold.eot');
+    src: local('./../fonts/Oswald/Oswald Bold'), local('Oswald-Bold'),
+    url('./../fonts/Oswald/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/Oswald/Oswald-Bold.woff') format('woff'),
+    url('./../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald Regular';
+    src: url('./../fonts/Oswald/Oswald-Regular.eot');
+    src: local('./../fonts/Oswald/Oswald Regular'), local('Oswald-Regular'),
+    url('./../fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/Oswald/Oswald-Regular.woff') format('woff'),
+    url('./../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald Light';
+    src: url('./../fonts/Oswald/Oswald-Light.eot');
+    src: local('./../fonts/Oswald/Oswald Light'), local('Oswald-Light'),
+    url('./../fonts/Oswald/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/Oswald/Oswald-Light.woff') format('woff'),
+    url('./../fonts/Oswald/Oswald-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+// Raleway
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('./../fonts/Raleway/Raleway-Regular.eot');
+    src: local('./../fonts/Raleway/Raleway Regular'), local('Raleway-Regular'),
+    url('./../fonts/Raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/Raleway/Raleway-Regular.woff') format('woff'),
+    url('./../fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('./../fonts/Raleway/Raleway-Bold.eot');
+    src: local('./../fonts/Raleway/Raleway Bold'), local('Raleway-Bold'),
+    url('./../fonts/Raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/Raleway/Raleway-Bold.woff') format('woff'),
+    url('./../fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
